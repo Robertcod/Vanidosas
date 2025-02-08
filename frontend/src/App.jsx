@@ -3,6 +3,7 @@ import ProductList from './components/ProductList';
 import Cart from './components/Cart';
 import ProductForm from './components/ProductForm'; // Importamos el formulario
 import CategoryForm from './components/CategoryForm';
+import Header from './components/header';
 
 const App = () => {
     const [cartItems, setCartItems] = useState([]);
@@ -34,6 +35,8 @@ const App = () => {
 
     return (
         <div>
+<header><Header/></header>
+
             <h1>Mi Tienda</h1>
                         {/* Formulario para agregar categorías */}
                         <CategoryForm onCategoryAdded={handleCategoryAdded} />
